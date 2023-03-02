@@ -1,0 +1,27 @@
+{
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.diagnostics.globals": [
+        "vim"
+    ],
+    "Lua.hint.enable": true,
+    "Lua.workspace.library": [
+        "runtime/lua"
+    ],
+    "Lua.format.defaultConfig": {
+        "indent_style": "space",
+        "indent_size": "4",
+        "tab_width": "4",
+        "max_line_length": "120"
+    },
+    "Lua.hint.setType": true,
+    "Lua.hint.arrayIndex": "Disable",
+    "editor.formatOnSave": true,
+    "Lua.runtime.path": [
+        "?.lua",
+        "?/init.lua",
+        "library/?.lua",
+        "library/?/init.lua",
+        "lua/?.lua",
+        "lua/?/init.lua"
+    ]
+}
