@@ -1,6 +1,5 @@
 #!/bin/zsh
 
-export ZPLUG_HOME=$HOMEBREW_PREFIX/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # zplug "zplug/zplug", hook-build:"zplug --self-manage"

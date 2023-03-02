@@ -48,4 +48,7 @@ path=(
 # Brew
 #
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [[ -f "/opt/homebrew/bin/brew" ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  export ZPLUG_HOME=/opt/homebrew/opt/zplug
+fi

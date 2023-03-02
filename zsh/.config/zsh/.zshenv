@@ -17,7 +17,4 @@ export ZDOTDIR=${ZDOTDIR:-${XDG_CONFIG_HOME}/zsh}
 # .zprofile
 #
 
-# We use .zprofile for everything else (load for non-login, non-interactive shells).
-if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprofile"
-fi
+source "${ZDOTDIR:-$HOME}/.zprofile"
